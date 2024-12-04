@@ -55,5 +55,18 @@ namespace GestaoBiblioteca
             frmAcerca.ShowDialog();
             frmAcerca.Dispose();
         }
+
+        private void BotaoUtilizadores_Click(object sender, EventArgs e)
+        {
+            /// <summary>
+            /// Gestão de utilizadores.
+            /// </summary>
+            private void BotaoUtilizadores_Click(object sender, EventArgs e)
+            {
+                FormUtilizadores frmUtilizadores = new FormUtilizadores();
+                frmUtilizadores.ShowDialog();
+                frmUtilizadores.Dispose();
+            }
+        }
     }
 }

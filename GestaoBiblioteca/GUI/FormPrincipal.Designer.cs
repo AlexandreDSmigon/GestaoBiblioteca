@@ -92,6 +92,7 @@
             this.BotaoUtilizadores.TabIndex = 4;
             this.BotaoUtilizadores.Text = "Utilizadores";
             this.BotaoUtilizadores.UseVisualStyleBackColor = true;
+            this.BotaoUtilizadores.Click += new System.EventHandler(this.BotaoUtilizadores_Click);
             // 
             // BotaoCatalogo
             // 
@@ -139,7 +140,7 @@
             // acercaDaAplicaçãoToolStripMenuItem
             // 
             this.acercaDaAplicaçãoToolStripMenuItem.Name = "acercaDaAplicaçãoToolStripMenuItem";
-            this.acercaDaAplicaçãoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.acercaDaAplicaçãoToolStripMenuItem.Size = new System.Drawing.Size(179, 22);
             this.acercaDaAplicaçãoToolStripMenuItem.Text = "Ac&erca da aplicação";
             this.acercaDaAplicaçãoToolStripMenuItem.Click += new System.EventHandler(this.acercaDaAplicaçãoToolStripMenuItem_Click);
             // 

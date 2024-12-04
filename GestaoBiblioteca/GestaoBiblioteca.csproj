@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F0463B59-7CC2-410F-8DE3-8A0D96AB71E2}</ProjectGuid>
+    <ProjectGuid>{C3900967-7D3F-44A6-9219-D48C81D2207B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>GestaoBiblioteca</RootNamespace>
     <AssemblyName>GestaoBiblioteca</AssemblyName>
@@ -46,14 +46,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Definicoes.cs" />
+    <Compile Include="GUI\FormAcercaAplicacao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="GUI\FormAcercaAplicacao.Designer.cs">
+      <DependentUpon>FormAcercaAplicacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormAutenticacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormAutenticacao.Designer.cs">
+      <DependentUpon>FormAutenticacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="GUI\FormAcercaAplicacao.resx">
+      <DependentUpon>FormAcercaAplicacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormAutenticacao.resx">
+      <DependentUpon>FormAutenticacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +84,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -75,6 +98,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\catalogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\livros.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\utilizadores.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

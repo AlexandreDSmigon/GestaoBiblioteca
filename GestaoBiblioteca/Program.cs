@@ -9,14 +9,19 @@ namespace GestaoBiblioteca
     internal static class Program
     {
         /// <summary>
-        /// Ponto de entrada principal para o aplicativo.
+        /// The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            // Efetuar autenticação
+            Application.Run(new GUI.FormAutenticacao());
+
+            // Executar a form principal
+            Application.Run(new FormPrincipal());
         }
     }
 }

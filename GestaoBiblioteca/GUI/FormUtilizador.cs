@@ -16,5 +16,28 @@ namespace GestaoBiblioteca.GUI
         {
             InitializeComponent();
         }
+
+        /// <summary>
+        /// Terminar a operação.
+        /// </summary>
+        private void BotaoOK_Click(object sender, EventArgs e)
+        {
+            
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            
+        }
+
+        /// <summary>
+        /// Cancelar a operação e fechar a janela.
+        /// </summary>
+        private void BotaoCancelar_Click(object sender, EventArgs e)
+        {
+           
+            
+                this.DialogResult = DialogResult.Cancel;
+                this.Close();
+            
+        }
     }
 }

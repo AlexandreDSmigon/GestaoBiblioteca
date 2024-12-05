@@ -145,15 +145,18 @@
             this.BotaoOK.TabIndex = 12;
             this.BotaoOK.Text = "&OK";
             this.BotaoOK.UseVisualStyleBackColor = true;
+            this.BotaoOK.Click += new System.EventHandler(this.BotaoOK_Click);
             // 
             // BotaoCancelar
             // 
+            this.BotaoCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BotaoCancelar.Location = new System.Drawing.Point(358, 248);
             this.BotaoCancelar.Name = "BotaoCancelar";
             this.BotaoCancelar.Size = new System.Drawing.Size(75, 23);
             this.BotaoCancelar.TabIndex = 13;
             this.BotaoCancelar.Text = "&Cancelar";
             this.BotaoCancelar.UseVisualStyleBackColor = true;
+            this.BotaoCancelar.Click += new System.EventHandler(this.BotaoCancelar_Click);
             // 
             // label1
             // 

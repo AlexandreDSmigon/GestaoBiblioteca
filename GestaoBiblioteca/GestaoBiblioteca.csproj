@@ -65,6 +65,18 @@
     <Compile Include="GUI\FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\FormUtilizador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormUtilizador.Designer.cs">
+      <DependentUpon>FormUtilizador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FormUtilizadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FormUtilizadores.Designer.cs">
+      <DependentUpon>FormUtilizadores.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUI\FormAcercaAplicacao.resx">
@@ -75,6 +87,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormUtilizador.resx">
+      <DependentUpon>FormUtilizador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FormUtilizadores.resx">
+      <DependentUpon>FormUtilizadores.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

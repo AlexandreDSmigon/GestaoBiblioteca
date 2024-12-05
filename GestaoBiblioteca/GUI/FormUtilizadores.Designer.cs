@@ -55,6 +55,7 @@
             this.BotaoCriar.TabIndex = 1;
             this.BotaoCriar.Text = "&Criar Utilizador";
             this.BotaoCriar.UseVisualStyleBackColor = true;
+            this.BotaoCriar.Click += new System.EventHandler(this.BotaoCriar_Click);
             // 
             // BotaoEditar
             // 
@@ -65,6 +66,7 @@
             this.BotaoEditar.TabIndex = 2;
             this.BotaoEditar.Text = "&Editar Utilizador";
             this.BotaoEditar.UseVisualStyleBackColor = true;
+            this.BotaoEditar.Click += new System.EventHandler(this.BotaoEditar_Click);
             // 
             // BotaoEliminar
             // 

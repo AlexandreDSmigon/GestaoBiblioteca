@@ -28,11 +28,35 @@ namespace GestaoBiblioteca.GUI
             ListaUtilizadores.Columns.Add("Username", 150, HorizontalAlignment.Left);
             ListaUtilizadores.Columns.Add("Nome", 160, HorizontalAlignment.Left);
             ListaUtilizadores.Columns.Add("Email", -2, HorizontalAlignment.Left);
+
+            
         }
 
         private void BotaoFechar_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(0);
+        }
+
+        /// <summary>
+        /// Criar um novo utilizador.
+        /// </summary>
+        private void BotaoCriar_Click(object sender, EventArgs e)
+        {
+            
+                FormUtilizador frmUtilizador = new FormUtilizador();
+                frmUtilizador.ShowDialog();
+                frmUtilizador.Dispose();
+            
+        }
+
+        /// <summary>
+        /// Editar os dados de um utilizador.
+        /// </summary>
+        private void BotaoEditar_Click(object sender, EventArgs e)
+        {
+            FormUtilizador frmUtilizador = new FormUtilizador();
+            frmUtilizador.ShowDialog();
+            frmUtilizador.Dispose();
         }
     }
 }

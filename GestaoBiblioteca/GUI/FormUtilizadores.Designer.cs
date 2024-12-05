@@ -81,6 +81,7 @@
             // BotaoFechar
             // 
             this.BotaoFechar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.BotaoFechar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.BotaoFechar.Location = new System.Drawing.Point(678, 310);
             this.BotaoFechar.Name = "BotaoFechar";
             this.BotaoFechar.Size = new System.Drawing.Size(110, 23);
@@ -104,6 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.BotaoFechar;
             this.ClientSize = new System.Drawing.Size(800, 345);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.BotaoFechar);

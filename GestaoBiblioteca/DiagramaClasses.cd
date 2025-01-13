@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="GestaoBiblioteca.Item">
+    <Position X="8.5" Y="0.5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>IAgAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQAAAAABQ=</HashCode>
+      <FileName>Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoBiblioteca.Leitor">
+    <Position X="1" Y="4.5" Width="7" />
+    <TypeIdentifier>
+      <HashCode>AAACAgAAAAAAAAAAgAAAAAgAAAYAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Leitor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GestaoBiblioteca.Pessoa">
+    <Position X="1.75" Y="1" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgCAAgAAAAQEAAAAAAAAAAAACAAAAAAEAAAA=</HashCode>
+      <FileName>Pessoa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="GestaoBiblioteca.TipoItem">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAEAAABAAAAEAAAA=</HashCode>
+      <FileName>TipoItem.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -15,6 +15,17 @@ namespace GestaoBiblioteca.GUI
         public FormUtilizador()
         {
             InitializeComponent();
+
+            // A janela deverá surgir no centro da aplicação
+            this.StartPosition = FormStartPosition.CenterParent;
+        }
+
+        private void FormUtilizador_Load(object sender, EventArgs e)
+        {
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.AcceptButton = BotaoOK;
+            this.CancelButton = BotaoCancelar;
         }
 
         /// <summary>
@@ -22,10 +33,8 @@ namespace GestaoBiblioteca.GUI
         /// </summary>
         private void BotaoOK_Click(object sender, EventArgs e)
         {
-            
-                this.DialogResult = DialogResult.OK;
-                this.Close();
-            
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
 
         /// <summary>
@@ -33,11 +42,8 @@ namespace GestaoBiblioteca.GUI
         /// </summary>
         private void BotaoCancelar_Click(object sender, EventArgs e)
         {
-           
-            
-                this.DialogResult = DialogResult.Cancel;
-                this.Close();
-            
+            this.DialogResult = DialogResult.Cancel;
+            this.Close();
         }
     }
 }

@@ -16,10 +16,20 @@ namespace GestaoBiblioteca.GUI
         {
             InitializeComponent();
 
-            this.StartPosition = FormStartPosition.CenterScreen;
+            // A janela deverá surgir no centro da aplicação
+            this.StartPosition = FormStartPosition.CenterParent;
+        }
+
+        private void FormUtilizadores_Load(object sender, EventArgs e)
+        {
+            this.SuspendLayout();
+
+            this.Text = "Utilizadores";
+            this.CancelButton = BotaoFechar;
 
             this.MinimumSize = new Size(816, 384);
             this.SizeGripStyle = SizeGripStyle.Show;
+
             ListaUtilizadores.View = View.Details;
             ListaUtilizadores.FullRowSelect = true;
             // Acrescentar as colunas à lista de utilizadores
@@ -29,12 +39,8 @@ namespace GestaoBiblioteca.GUI
             ListaUtilizadores.Columns.Add("Nome", 160, HorizontalAlignment.Left);
             ListaUtilizadores.Columns.Add("Email", -2, HorizontalAlignment.Left);
 
-            
-        }
 
-        private void BotaoFechar_Click(object sender, EventArgs e)
-        {
-            System.Environment.Exit(0);
+            this.ResumeLayout(false);
         }
 
         /// <summary>
@@ -42,11 +48,9 @@ namespace GestaoBiblioteca.GUI
         /// </summary>
         private void BotaoCriar_Click(object sender, EventArgs e)
         {
-            
-                FormUtilizador frmUtilizador = new FormUtilizador();
-                frmUtilizador.ShowDialog();
-                frmUtilizador.Dispose();
-            
+            FormUtilizador frmUtilizador = new FormUtilizador();
+            frmUtilizador.ShowDialog();
+            frmUtilizador.Dispose();
         }
 
         /// <summary>
@@ -57,6 +61,14 @@ namespace GestaoBiblioteca.GUI
             FormUtilizador frmUtilizador = new FormUtilizador();
             frmUtilizador.ShowDialog();
             frmUtilizador.Dispose();
+        }
+
+        /// <summary>
+        /// Fechar a janela.
+        /// </summary>
+        private void BotaoFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
